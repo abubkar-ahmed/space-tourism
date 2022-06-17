@@ -1,0 +1,141 @@
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./images/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    main{
+        padding: 24px;
+        text-align: center;
+        .sec-1{
+            margin: 2rem 0 5rem 0;
+            h1{
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 2.7px;
+                line-height: 19.2px;
+                color: $color-2;
+            }
+            h2{
+                font-family: 'Barlow Condensed', sans-serif;
+                font-size: 80px;
+                font-weight: 400;
+                letter-spacing: 15px;
+                color: $color-3;
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $color-2;
+            }
+        }
+        button{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: none;
+            a{
+                letter-spacing: 1.25px;
+                color: $color-1;
+                font-size: 20px;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+@media (min-width:600px) and (max-width:991px) {
+    .home{
+        background-image: url("./images/home/background-home-tablet.jpg");
+        main{
+            .sec-1{
+                margin: 4rem 0 5rem 0;
+                h1{
+                    font-size: 20px;
+                    letter-spacing: 3.38px;
+                }
+                h2{
+                    font-size: 150px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 28px;
+                    width: 70%;
+                    margin: auto;
+                }
+            }
+            button{
+                width: 242px;
+                height: 242px;
+                a{
+                    letter-spacing: 2px;
+                    font-size: 32px;
+                }
+            }
+    
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .home{
+        background-image: url("./images/home/background-home-desktop.jpg");
+        main{
+            display: flex;
+            margin-top: 10rem;
+            padding: 0;
+            justify-content: space-evenly;
+            .sec-1{
+                margin: 0;
+                width: 28%;
+                text-align: start;
+                h1{
+                    font-size: 28px;
+                    letter-spacing: 4.72px;
+                }
+                h2{
+                    font-size: 150px;
+
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            .sec-2{
+                width: 28%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button{
+                    width: 274px;
+                    height: 274px;
+                    cursor: pointer;
+                    &:hover{
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            background-color: $color-3;
+                            width: 274px;
+                            height: 274px;
+                            top: 0;
+                            left: 0;
+                            opacity: 0.1;
+                            border-radius: 50%;
+                            transform: scale(1.5,1.5);
+                        }
+                    }
+                    a{
+                        font-size: 32px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

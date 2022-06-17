@@ -1,0 +1,180 @@
+.technology{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./images/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    main{
+        text-align: center;
+        margin: 2rem 0;
+        h1{
+            margin-bottom: 2rem;
+            color: $color-3;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 16px;
+            letter-spacing: 2.7px;
+            span{
+                margin-right: 1rem;
+                opacity: 0.25;
+            }
+        }
+        .main-container{
+            .sec-1{
+                img{
+                    width: 100%;
+                }
+            }
+            .sec-2{
+                .controls{
+                    width: 152px;
+                    margin: 2rem auto;
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid $color-2;
+                        color: $color-2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.active{
+                            background-color: $color-3;
+                            color:$color-1;
+                        }
+                    }
+                }
+                .info{
+                    h2{
+                        font-size: 14px;
+                        letter-spacing: 2.36px;
+                        text-transform: uppercase;
+                        color: $color-2;
+                        font-family: 'Barlow Condensed', sans-serif;
+                        font-weight: 400;
+                        margin-bottom:16px;
+                    }
+                    h3{
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        color: $color-3;
+                        font-weight: 400;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        color: $color-2;
+                        font-family: 'Barlow Condensed', sans-serif;
+                        padding: 0 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width:600px) and (max-width:1199px){
+    .technology{
+        background-image: url("./images/technology/background-technology-tablet.jpg");
+        main{
+            h1{
+                text-align: start;
+                font-size: 20px;
+                letter-spacing: 3.38px;
+                margin: 2rem;
+            }
+            .sec-2{
+                .controls{
+                    width: 210px;
+                    margin: 2rem auto;
+                    span{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .info{
+                    h2{
+                        font-size: 16px;
+                        letter-spacing: 2.7px;
+                    }
+                    h3{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 28px;
+                        padding: 2rem;
+                        width: 458px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px){
+    .technology{
+        background-image: url("./images/technology/background-technology-desktop.jpg");
+        main{
+            text-align: start;
+            margin: 2rem 0rem;
+            h1{
+                font-size: 28px;
+                letter-spacing: 4.72px;
+                margin-left: 10rem;
+            }
+            .main-container{
+                display: flex;
+                flex-direction: row-reverse;
+                margin-left: 10rem;
+                justify-content: space-between;
+                .sec-1{
+                    width: 515px;
+                    img{
+                        width: 515px;
+                        height: 480px;
+                    }
+                }
+                .sec-2{
+                    display: flex;
+                    .controls{
+                        flex-direction: column;
+                        gap: 32px;
+                        height: fit-content;
+                        span{
+                            width: 80px;
+                            height: 80px;
+                            font-size: 32px;
+                        }
+                    }
+                    .info{
+                        margin-top: 2rem ;
+                        h2{
+                            font-size: 18px;
+                            letter-spacing: 2.7px;
+                        }
+                        h3{
+                            font-size: 56px;
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 32px;
+                            padding: 0;
+                            width: 444px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
