@@ -20,6 +20,7 @@ header{
         padding: 8rem 0 0 3rem;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(81.5485px);
+        z-index: 99;
         .close{
             position: absolute;
             top: 2rem;

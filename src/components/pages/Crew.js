@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer';
 import Header from '../Header'
 
 function Crew({data}) {
@@ -40,6 +41,7 @@ function Crew({data}) {
             <h1><span>02</span>meet your crew</h1>
             <ComponentDisplayed />
         </main>
+        <Footer />
     </div>
   )
 }

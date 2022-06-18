@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer';
 import Header from '../Header';
 
 function Technology({data}) {
@@ -37,6 +38,7 @@ function Technology({data}) {
             <h1><span>03</span>space launch 101</h1>
             <ComponentDisplayed />
         </main>
+        <Footer />
     </div>
   )
 }

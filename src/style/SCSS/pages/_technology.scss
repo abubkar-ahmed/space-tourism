@@ -4,6 +4,8 @@
     background-image: url("./images/technology/background-technology-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
     main{
         text-align: center;
         margin: 2rem 0;

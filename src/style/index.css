@@ -47,6 +47,7 @@ header .nav {
   background: rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(81.5485px);
           backdrop-filter: blur(81.5485px);
+  z-index: 99;
 }
 
 header .nav .close {
@@ -253,11 +254,19 @@ header .nav ul li a span {
   background-image: url("./images/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home main {
   padding: 24px;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .home main .sec-1 {
@@ -669,6 +678,13 @@ header .nav ul li a span {
   background-image: url("./images/crew/background-crew-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .crew main {
@@ -859,6 +875,13 @@ header .nav ul li a span {
   background-image: url("./images/technology/background-technology-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .technology main {
@@ -1046,6 +1069,33 @@ header .nav ul li a span {
     line-height: 32px;
     padding: 0;
     width: 444px;
+  }
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(81.5485px);
+          backdrop-filter: blur(81.5485px);
+  margin-top: auto;
+}
+
+footer h1 {
+  font-size: 0.7rem;
+  color: #D0D6F9;
+  text-transform: capitalize;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+footer h1 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+@media (min-width: 600px) {
+  footer h1 {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header'
 import { Link } from 'react-router-dom';
+import Footer from '../Footer';
 
 
 function HomePage() {
@@ -19,6 +20,7 @@ function HomePage() {
                 <button><Link to='/destenation'>EXPLORE</Link></button>
             </section>
         </main>
+        <Footer />
     </div>
     
   )

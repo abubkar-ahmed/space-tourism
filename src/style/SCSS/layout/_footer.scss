@@ -1,0 +1,25 @@
+footer{
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    margin-top: auto;
+    h1{
+        font-size: 0.7rem;
+        color: $color-2;
+        text-transform: capitalize;
+        padding: 1rem;
+        text-align: center;
+        font-weight: 400;
+        a{
+            text-decoration: none;
+            color: $color-3;
+        }
+    }
+}
+
+@media (min-width:600px){
+    footer{
+        h1{
+            font-size: 1rem;
+        }
+    }
+}

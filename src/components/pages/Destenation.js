@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer';
 import Header from '../Header'
 
 
@@ -47,6 +48,7 @@ function Destenatio({data}) {
         <h1><span>01</span>pick your destination</h1>
         <ComponentDisplayed />
       </main>
+      <Footer />
     </div>
   )
 }
