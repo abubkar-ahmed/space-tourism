@@ -2,9 +2,10 @@ import React from 'react'
 import Header from '../Header'
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
-
+import {useNavigate} from 'react-router-dom';
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className='home'>
         <Header />
@@ -17,7 +18,7 @@ function HomePage() {
                 </p>
             </section>
             <section className='sec-2'>
-                <button><Link to='/destenation'>EXPLORE</Link></button>
+                <button onClick={() => navigate('destenation')}>EXPLORE</button>
             </section>
         </main>
         <Footer />

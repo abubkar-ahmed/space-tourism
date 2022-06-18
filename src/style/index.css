@@ -303,13 +303,9 @@ header .nav ul li a span {
   height: 150px;
   border-radius: 50%;
   border: none;
-}
-
-.home main button a {
   letter-spacing: 1.25px;
   color: #0B0D17;
   font-size: 20px;
-  text-decoration: none;
 }
 
 @media (min-width: 600px) and (max-width: 991px) {
@@ -335,8 +331,6 @@ header .nav ul li a span {
   .home main button {
     width: 242px;
     height: 242px;
-  }
-  .home main button a {
     letter-spacing: 2px;
     font-size: 32px;
   }
@@ -388,6 +382,8 @@ header .nav ul li a span {
     width: 274px;
     height: 274px;
     cursor: pointer;
+    font-size: 32px;
+    letter-spacing: 2px;
   }
   .home main .sec-2 button:hover {
     position: relative;
@@ -404,10 +400,6 @@ header .nav ul li a span {
     border-radius: 50%;
     -webkit-transform: scale(1.5, 1.5);
             transform: scale(1.5, 1.5);
-  }
-  .home main .sec-2 button a {
-    font-size: 32px;
-    letter-spacing: 2px;
   }
 }
 
@@ -1053,6 +1045,7 @@ header .nav ul li a span {
     width: 80px;
     height: 80px;
     font-size: 32px;
+    cursor: pointer;
   }
   .technology main .main-container .sec-2 .info {
     margin-top: 2rem;
